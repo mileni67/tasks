@@ -1,7 +1,7 @@
 {
     const tasks = [
         {
-            content: "nagrać lejcję",
+            content: "nagrać lekcję",
             done: false,
         },
         {
@@ -44,19 +44,17 @@
                 toggleTaskDone(index);
             });
         });
-    }
+    };
 
     const render = () => {
         let htmlString = "";
 
         for (const task of tasks) {
             htmlString += `
-            <li
-            ${task.done ? " style=\"text-decoration: line-through\"" : ""}
-            >
-            <button class="js-done">zrobione?</button>
-            <button class="js-remove">usuń</button>
-            ${task.content}
+            <li class="list__items">
+            <button class="list__button list__button--done js-done">${task.done ? "&#10004" : ""}</button>
+            <span ${task.done ? "style=\"text-decoration: line-through\"" : ""}>${task.content}</span>
+            <button class="list__button--delete js-remove">🗑</button>
             </li>
             `;
         }
