@@ -1,0 +1,13 @@
+.section {
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+.section__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #eee;
+    padding: 20px;
+    margin: 0;
+}

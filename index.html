@@ -15,16 +15,30 @@
         rel="stylesheet">
     <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/taskList.css">
+    <link rel="stylesheet" href="css/form.css">
+
     <title>Lista zadań</title>
 </head>
 
 <body>
-    <form class="js-form">
-        <input class="js-newTask">
-        <button>Dodaj zadanie</button>
-    </form>
+    <div class="container">
+        <h1 class="header">Lista zadań</h1>
+        <section class="section">
+            <h2 class="section__header">Dodaj nowe zadanie</h2>
+            <form class="form js-form">
+                <input type="text" class="form__input js-newTask" placeholder="Co jest do zrobenia?">
+                <button class="form__button">Dodaj zadanie</button>
+            </form>
+        </section>
+        <section class="section">
+            <h2 class="section__header">Lista zadań</h2>
+        <ul class="taskList js-tasks"></ul>
+    </section>
 
-    <ul class="js-tasks"></ul>
+    </div>
 </body>
 
 </html>
