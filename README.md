@@ -2,7 +2,7 @@
 ![ToDoList](https://github.com/mileni67/tasks/blob/main/images/todo.PNG?raw=true)
 
 
-## This my Demo 
+## This is my Demo 
 [To do list](mileni67.github.io/tasks/)
 
 ## Description
