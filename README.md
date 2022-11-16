@@ -2,15 +2,15 @@
 ![ToDoList](https://github.com/mileni67/tasks/blob/main/images/todo.PNG?raw=true)
 
 
-##This my Demo 
+## This my Demo 
 [To do list](mileni67.github.io/tasks/)
 
-##Description
-My app helps you remember the most important things to do during the day.
+## Description
+This app will help you remember the most important things to do.
 
-##Used Technologies
--HTML
--CSS
--JavaSctipt
--Git
+## Used Technologies
+- HTML
+- CSS
+- JavaSctipt
+- Git
 
