@@ -9,7 +9,7 @@
     }
 }
 
-.form__input{
+.form__field{
     flex-basis: 100px;
     flex-grow: 1;
     overflow: hidden;
@@ -42,36 +42,3 @@
     background-color: rgb(159, 215, 215);
 }
 
-.list__items {
-    display: grid;
-    grid-template-columns:  auto 1fr auto;
-    text-decoration: none;
-    grid-gap: 10px;
-    align-items: center;
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
-}
-
-.list__button {
-    width: 21px;
-    height: 21px;
-    border: none;
-    text-decoration: none;
-    background-color: rgb(22, 143, 22);
-}
-
-.list__button--done {
-    background-color: rgb(22, 143, 22);
-    text-decoration: none;
-    border: none;
-    color: #fff;
-}
-
-.list__button--delete {
-    background-color: crimson;
-    color: #fff;
-    order: 1;
-    width: 21px;
-    height: 21px;
-    border: none;
-}

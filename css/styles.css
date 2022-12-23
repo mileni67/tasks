@@ -10,3 +10,41 @@ body {
     font-family: 'Monserrat', sans-serif;
     background-color: #eee;
 }
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.container__buttons {
+    padding-right: 20px;
+}
+
+.containerButtons__button {
+    border: none;
+    background-color: white;
+    color: teal;
+    transition: 0.5s;
+}
+
+.containerButtons__button:hover {
+    color: hsl(180, 60%, 20%);
+    cursor: pointer;
+}
+
+.containerButtons__button:disabled {
+    color: #ccc;
+    cursor: auto;
+}
+
+@media (max-width: 767px) {
+    .container__buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        align-items: center;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+}
