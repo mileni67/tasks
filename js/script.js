@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     const tasks = [
         {
             content: "nagrać lekcję",
@@ -14,11 +15,29 @@
         tasks.push({
             content: newTaskContent,
         });
+=======
+    const tasks = [];
+
+    let hideTasksDone = false;
+
+    const toggleHideTasksDone = () => {
+        hideTasksDone = !hideTasksDone;
+
+        render();
+    };
+
+    const addNewTask = (newTaskContent) => {
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ];
+>>>>>>> c5f3dff (addded code)
 
         render();
     };
 
     const removeTask = (taskIndex) => {
+<<<<<<< HEAD
         tasks.splice(taskIndex, 1);
         render();
     }
@@ -29,6 +48,41 @@
     }
 
     const bindEvents = () => {
+=======
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            ...tasks.slice(taskIndex + 1),
+        ]
+
+        render();
+    };
+
+    const toggleTaskDone = (taskIndex) => {
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            {
+                ...tasks[taskIndex],
+                done: !tasks[taskIndex].done,
+            },
+            ...tasks.slice(taskIndex + 1),
+        ]
+
+        render();
+    };
+
+    const markAllTasksDone = () => {
+        tasks = tasks.map((task) => ({
+            ...task,
+            done: true,
+        }));
+
+        render();
+    };
+
+    
+
+    const bindRemoveEvents = () => {
+>>>>>>> c5f3dff (addded code)
         const removeButtons = document.querySelectorAll(".js-remove");
 
         removeButtons.forEach((removeButtons, index) => {
