@@ -1,5 +1,5 @@
 {
-    const tasks = [];
+    let tasks = [];
 
     let hideTasksDone = false;
 
