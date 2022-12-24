@@ -5,12 +5,14 @@
 }
 
 .section__header {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
     justify-content: space-between;
     border-bottom: 2px solid #eee;
     padding: 20px;
     margin: 0;
+    text-align: center;
 }
 
 @media (max-width: 767px) {

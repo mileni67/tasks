@@ -25,7 +25,7 @@ body {
     border: none;
     background-color: white;
     color: teal;
-    transition: 0.5s;
+    transition: color 0.5s;
 }
 
 .containerButtons__button:hover {
