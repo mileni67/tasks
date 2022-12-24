@@ -4,6 +4,7 @@
     box-shadow: 0 0 5px #ddd;
 }
 
+
 .section__header {
     display: grid;
     grid-template-columns: auto auto;
@@ -13,6 +14,10 @@
     padding: 20px;
     margin: 0;
     text-align: center;
+}
+
+.section__body {
+    padding: 20px;
 }
 
 @media (max-width: 767px) {
